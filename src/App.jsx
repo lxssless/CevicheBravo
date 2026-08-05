@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { supabase } from './supabaseClient'
 import logoCevicheBravo from './assets/logo.png'
+import PinGate from './PinGate'
 
 function App() {
   const [seccion, setSeccion] = useState('dashboard')
@@ -1580,6 +1581,7 @@ function App() {
   }
 
   return (
+    <PinGate>
     <div className="app-shell">
       <div className="app-shell__inner">
         {renderTopBar()}
@@ -1683,6 +1685,7 @@ function App() {
         </div>
       ) : null}
     </div>
+    </PinGate>
   )
 }
 
