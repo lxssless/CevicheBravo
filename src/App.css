@@ -887,3 +887,57 @@ strong {
     width: 100%;
   }
 }
+.app-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 24px;
+}
+
+.app-navigation a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.app-navigation a:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.app-navigation a.active {
+  background: #0f766e;
+  color: #ffffff;
+  border-color: #0f766e;
+}
+.resumen-caja__dato--clickeable {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+}
+
+.resumen-caja__dato--clickeable:hover {
+  transform: translateY(-2px);
+}
+
+.resumen-caja__dato--clickeable:focus-visible {
+  outline: 3px solid rgba(30, 92, 168, 0.35);
+  outline-offset: 5px;
+  border-radius: 8px;
+}

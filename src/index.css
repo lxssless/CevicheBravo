@@ -938,3 +938,36 @@ textarea.form-control {
   color: #dc2626;
   text-align: center;
 }
+.app-navigation {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin: 20px 0 24px !important;
+}
+
+.app-navigation a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 44px !important;
+  padding: 10px 16px !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  color: #334155 !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.app-navigation a:hover {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+.app-navigation a.active {
+  background: #0f766e !important;
+  color: #ffffff !important;
+  border-color: #0f766e !important;
+}
